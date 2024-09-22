@@ -5,13 +5,17 @@ body {
 }
 
 .link {
-  color: #434455;
+  color: #2e2f42;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 .link:hover {
-  color: #4d5ae5;
+  color: #404bbf;
 }
 .link:focus {
   text-decoration-line: underline;
+  color: #404bbf;
 }
 
 .logo_class_name {
@@ -81,10 +85,10 @@ body {
   cursor: pointer;
 }
 
-.button_class_name:hover {
+.button_class_name :hover {
   color: #404bbf;
 }
-.button_class_name:focus {
+.button_class_name :focus {
   color: #404bbf;
 }
 
