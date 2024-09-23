@@ -39,8 +39,12 @@ body {
   color: #4d5ae5;
 }
 
-.WebStudio_class_name {
+.studio_class_name {
   color: #2e2f42;
+}
+
+.studio_footer_name {
+  color: #f4f4fd;
 }
 
 .address_class_name {
@@ -82,8 +86,8 @@ body {
   cursor: pointer;
 }
 
-.button_class_name :hover,
-.button_class_name :focus {
+.button_class_name:hover,
+.button_class_name:focus {
   background-color: #404bbf;
 }
 
@@ -99,6 +103,13 @@ body {
   color: #2e2f42;
 }
 
+.title_team_description {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
 .point_description_name {
   font-size: 16px;
   line-height: 1.5;
