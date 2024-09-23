@@ -102,13 +102,6 @@ body {
   color: #2e2f42;
 }
 
-.title_team_description {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-}
 .point_description_name {
   font-size: 16px;
   line-height: 1.5;
@@ -138,6 +131,14 @@ p {
 
 .team_page {
   background-color: #ffffff;
+}
+
+.custom-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
 }
 
 .title__members_description {
