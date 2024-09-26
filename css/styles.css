@@ -3,12 +3,37 @@ body {
   color: #434455;
   background-color: #fff;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 a {
   text-decoration: none;
 }
 
 ul {
   list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 .link {
@@ -25,6 +50,44 @@ ul {
 .link:focus {
   text-decoration-line: underline;
   color: #404bbf;
+}
+
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.container {
+  display: flex;
+  width: 1158px;
+  margin: 0;
+  padding: 0 15px;
+}
+
+.nav_list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-first {
+  display: flex;
+}
+
+.nav-menu_reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0 0 0 332px;
+}
+
+.nav-second {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0 15px;
 }
 
 .link_address {
@@ -44,6 +107,7 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 
 .studio_class_name {
@@ -70,6 +134,8 @@ ul {
 
 .page_title_name {
   background-color: #2e2f42;
+  width: 100%;
+  height: 600px;
 }
 .title {
   font-weight: 700;
@@ -79,6 +145,12 @@ ul {
   text-align: center;
   color: #fff;
   font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50vh;
+  align-items: center;
+  text-align: center;
 }
 
 .button_class_name {
@@ -101,12 +173,49 @@ ul {
   text-align: center;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section_two {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: stretch;
+  margin-right: auto;
+}
+
+.description_list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  width: calc((100% - 24px) / 3);
+}
+
 .description_class_name {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  width: calc((100% - 24px) / 3);
+  text-align: right;
+  display: flex;
 }
 
 .point_description_name {
@@ -114,6 +223,15 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  width: calc((100% - 24px) / 3);
+  text-align: right;
+  margin-top: 10px;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  margin-right: auto;
 }
 
 p {
@@ -123,9 +241,23 @@ p {
   color: #2e2f42;
 }
 
+img {
+  object-fit: cover;
+}
+
 .team {
   background-color: #f4f4fd;
 }
+
+.team-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  margin-right: auto;
+}
+
 .card_title {
   font-size: 36px;
   line-height: 1.11;
@@ -134,6 +266,9 @@ p {
   text-transform: capitalize;
   color: #2e2f42;
   font-weight: 500;
+  align-self: center;
+  padding-top: 120px;
+  padding-bottom: 72px;
 }
 
 .team_page {
@@ -179,12 +314,46 @@ p {
   color: #434455;
 }
 
+.container-portfolio {
+  max-width: 1200px;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 0;
+  list-style: none;
+}
+
 .footer {
+  border-bottom: 1px solid #2e2f42;
+}
+
+.container-footer {
+  display: flex;
+  width: 1158px;
+  margin: 0;
+  padding: 0 15px;
   background-color: #2e2f42;
+
+  align-items: center;
+  margin-right: auto;
 }
 
 .footer_paragraph {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  margin-top: 20px;
+  display: flex;
+}
+
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
