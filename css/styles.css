@@ -59,7 +59,7 @@ ol {
 .container {
   display: flex;
   width: 1158px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0 15px;
 }
 
@@ -75,19 +75,16 @@ ol {
 
 .nav-first {
   display: flex;
+  padding: 24px 0;
 }
 
 .nav-menu_reverse {
   display: flex;
-  flex-direction: row-reverse;
-  margin: 0 0 0 332px;
 }
 
 .nav-second {
   display: flex;
-  justify-content: space-evenly;
-  margin: 0;
-  padding: 0 15px;
+  gap: 40px;
 }
 
 .link_address {
@@ -134,9 +131,9 @@ ol {
 
 .page_title_name {
   background-color: #2e2f42;
-  width: 100%;
-  height: 600px;
+  padding: 188px 0;
 }
+
 .title {
   font-weight: 700;
   font-size: 56px;
@@ -145,12 +142,7 @@ ol {
   text-align: center;
   color: #fff;
   font-family: "Roboto", sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 50vh;
-  align-items: center;
-  text-align: center;
+  max-width: 496px;
 }
 
 .button_class_name {
@@ -162,6 +154,11 @@ ol {
   letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
 }
 
 .button_class_name:hover,
@@ -187,11 +184,12 @@ ol {
 }
 
 .section_two {
+  padding: 120px 0;
+}
+
+.container-section_two {
   display: flex;
-  justify-content: center;
-  height: 100vh;
-  align-items: stretch;
-  margin-right: auto;
+  gap: 24px;
 }
 
 .description_list {
@@ -204,7 +202,7 @@ ol {
   display: flex;
   align-items: center;
   margin: 0;
-  width: calc((100% - 24px) / 3);
+  width: calc((100% - 72px) / 4);
 }
 
 .description_class_name {
@@ -243,6 +241,7 @@ p {
 
 img {
   object-fit: cover;
+  display: block;
 }
 
 .team {
@@ -330,7 +329,7 @@ img {
 }
 
 .footer {
-  border-bottom: 1px solid #2e2f42;
+  padding: 100px 0;
 }
 
 .container-footer {
@@ -348,8 +347,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  margin-top: 20px;
-  display: flex;
+  max-width: 264px;
 }
 
 .page-container {
